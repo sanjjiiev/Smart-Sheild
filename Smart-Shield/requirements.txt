@@ -1,0 +1,9 @@
+express 
+nodemailer 
+dotenv 
+cors 
+body-parser
+mysql2
+serialport
+axios
+fs

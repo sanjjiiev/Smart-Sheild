@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accident Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        table { width: 80%; margin: 20px auto; border-collapse: collapse; }
+        th, td { border: 1px solid black; padding: 10px; }
+        th { background-color: #f2f2f2; }
+        select { margin: 10px; padding: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Accident Dashboard</h1>
+
+    <!-- Dropdown for Filtering -->
+    <label for="filter">Filter Cases:</label>
+    <select id="filter">
+        <option value="all">All</option>
+        <option value="complete">Complete</option>
+        <option value="pending">Pending</option>
+    </select>
+
+    <!-- Accident Table -->
+    <table>
+        <thead>
+            <tr>
+                <th>Accident ID</th>
+                <th>Vehicle Reg</th>
+                <th>Ambulance</th>
+                <th>Status</th>
+                <th>Accident Location</th>
+                <th>Hospital Location</th>
+                <th>Date</th>
+                <th>Time</th>
+            </tr>
+        </thead>
+        <tbody id="accidentTableBody"></tbody>
+    </table>
+
+    <script>
+        async function fetchAccidents() {
+            const filterValue = document.getElementById("filter").value;
+            const response = await fetch(`/api/accidents?status=${filterValue}`);
+            const data = await response.json();
+            renderTable(data);
+        }
+
+        function renderTable(data) {
+            const tableBody = document.getElementById('accidentTableBody');
+            tableBody.innerHTML = "";
+            
+            data.forEach(accident => {
+                const row = `<tr>
+                    <td>${accident.accident_id}</td>
+                    <td>${accident.acc_vehicle_num}</td>
+                    <td>${accident.amb_vehicle_num || 'N/A'}</td>
+                    <td>${accident.status || 'Pending'}</td>
+                    <td>${accident.acc_loc}</td>
+                    <td>${accident.hospital_loc}</td>
+                    <td>${accident.acc_date}</td>
+                    <td>${accident.acc_time}</td>
+                </tr>`;
+                tableBody.innerHTML += row;
+            });
+        }
+
+        document.getElementById("filter").addEventListener("change", fetchAccidents);
+        fetchAccidents();
+    </script>
+</body>
+</html>

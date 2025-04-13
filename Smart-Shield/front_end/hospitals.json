@@ -1,0 +1,108 @@
+[
+  {
+    "name": "Kovai Medical Center and Hospital",
+    "location": {
+      "latitude": 11.04235206006204,
+      "longitude":  77.0404473768131
+    }
+  },
+  {
+    "name": "PSG Hospitals",
+    "location": {
+      "latitude": 11.018589665526152, 
+      "longitude": 77.00680417016257
+    }
+  },
+  {
+    "name": "Sri RamaKrishna Hospital",
+    "location": {
+      "latitude": 11.023181516169874, 
+      "longitude": 76.97773416451017
+    }
+  },
+  {
+    "name": "Ganga Hospital",
+    "location": {
+      "latitude": 11.026070440967858, 
+      "longitude": 76.9522226189305
+    }
+  },
+  {
+    "name": "KG Hospital",
+    "location": {
+      "latitude": 11.05141215645077, 
+      "longitude": 76.99283771975095
+    }
+  },
+  {
+    "name": "Government Hospital Coimbatore",
+    "location": {
+      "latitude": 10.996329140900091,
+      "longitude": 76.97028302834917
+    }
+  },
+  {
+    "name": "GEM Hospital",
+    "location": {
+      "latitude": 10.999649311036329, 
+      "longitude": 76.99546444408189
+    }
+  },
+  {
+    "name": "Kongunad Hospital",
+    "location": {
+      "latitude": 11.017756666015385, 
+      "longitude": 76.96045573763259
+    }
+  },
+  {
+    "name": "G. Kuppuswamy Naidu Memorial Hospital",
+    "location": {
+      "latitude": 11.012432939805512, 
+      "longitude": 76.98094576954361
+    }
+  },
+  {
+    "name": "Government Hospital Annur",
+    "location": {
+      "latitude": 11.232489050727159,
+      "longitude":  77.10222187215422
+    }
+  },
+  {
+    "name": "Mettupalayam Government Hospital",
+    "location": {
+      "latitude": 11.304714681887855,
+      "longitude": 76.93654645420213
+    }
+  },
+  {
+    "name": "Government Hospital Kinathukadavu",
+    "location": {
+      "latitude": 10.821165343188786, 
+      "longitude":77.01755133497147
+    }
+  },
+  {
+    "name": "Royal Care Hospital",
+    "location": {
+      "latitude": 11.010155255362758, 
+      "longitude": 76.96545316511803
+    }
+  },
+  
+  {
+    "name": "Government Hospital Madukkarai",
+    "location": {
+      "latitude": 10.90384789752288, 
+      "longitude": 76.96367679837866
+    }
+  },
+  {
+    "name": "VGM Hospital",
+    "location": {
+      "latitude": 10.998574130985574, 
+      "longitude": 77.0143697253024
+    }
+  }
+]

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accident Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+        input, button { padding: 10px; margin: 10px; }
+        button { cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h2>Accident Report</h2>
+    
+    <label>Accident Vehicle Number:</label>
+    <input type="text" id="vehicleNumber" value="TN384251"><br>
+
+    <label>Ambulance Number:</label>
+    <input type="text" id="ambulanceNumber" value="KA42003"><br>
+
+    <label>Accident Location (Latitude, Longitude):</label>
+    <input type="text" id="acc_latitude" value="28.7041">
+    <input type="text" id="acc_longitude" value="77.1025"><br>
+
+    <label>Hospital Location (Latitude, Longitude):</label>
+    <input type="text" id="hos_latitude" value="11.0259613">
+    <input type="text" id="hos_longitude" value="76.9496428"><br>
+
+
+    <button onclick="submitAccident()">Submit</button>
+    
+    <h3 id="responseMessage"></h3>
+
+    <script>
+        async function submitAccident() {
+    const vehicleNumber = document.getElementById("vehicleNumber").value.trim();
+    const ambulanceNumber = document.getElementById("ambulanceNumber").value.trim();
+    const acc_latitude = document.getElementById("acc_latitude").value.trim();
+    const acc_longitude = document.getElementById("acc_longitude").value.trim();
+    const hospital_latitude = document.getElementById("hos_latitude").value.trim();
+    const hospital_longtitude = document.getElementById("hos_longitude").value.trim();
+    const responseMessage = document.getElementById("responseMessage");
+
+    try {
+        const response = await fetch("http://localhost:3000/submit-accident", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                acc_vehicle_num: vehicleNumber,
+                amb_vehicle_num: ambulanceNumber,
+                acc_lat: acc_latitude,
+                acc_lng: acc_longitude,
+                hos_lat: hospital_latitude,
+                hos_lng:hospital_longtitude,
+            }),
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+            if (data.emailSent) {
+                responseMessage.innerText = "✅ Accident reported successfully, and email sent!";
+                responseMessage.style.color = "green";
+            } else {
+                responseMessage.innerText = "⚠️ Accident reported, but email not sent!";
+                responseMessage.style.color = "orange";
+            }
+        } else {
+            responseMessage.innerText = `❌ ${data.message}`;
+            responseMessage.style.color = "red";
+        }
+    } catch (error) {
+        console.error("Error:", error);
+        responseMessage.innerText = "❌ Server error. Please try again.";
+        responseMessage.style.color = "red";
+    }
+}
+
+    </script>
+</body>
+</html>

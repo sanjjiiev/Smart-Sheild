@@ -1,0 +1,143 @@
+[
+    {
+      "name": "Abinand Hospital",
+      "location": {
+        "latitude": 10.9544799,
+        "longitude": 76.9708481
+      }
+    },
+    {
+      "name": "Alva Hospital",
+      "location": {
+        "latitude": 10.6442008,
+        "longitude": 76.9578652
+      }
+    },
+    {
+      "name": "Arthy Hospitals",
+      "location": {
+        "latitude": 10.9959116,
+        "longitude": 76.9937276
+      }
+    },
+    {
+      "name": "Arun Hospital",
+      "location": {
+        "latitude": 10.6625937,
+        "longitude": 77.010371
+      }
+    },
+    {
+      "name": "Bragathi Hospital",
+      "location": {
+        "latitude": 11.021437,
+        "longitude": 76.974646
+      }
+    },
+    {
+      "name": "Government Hospital Coimbatore",
+      "location": {
+        "latitude": 10.995225,
+        "longitude": 76.9699658
+      }
+    },
+    {
+      "name": "Deepam Hospital",
+      "location": {
+        "latitude": 10.9966744,
+        "longitude": 77.001251
+      }
+    },
+    {
+      "name": "Dr. Dasarathan Memorial Hospital",
+      "location": {
+        "latitude": 11.0888096,
+        "longitude": 76.9359074
+      }
+    },
+    {
+      "name": "Dr. Muthus Ortho Hospital - Coimbatore",
+      "location": {
+        "latitude": 11.0027434,
+        "longitude": 77.0381049
+      }
+    },
+    {
+      "name": "FIMS Hospital",
+      "location": {
+        "latitude": 10.9578836,
+        "longitude": 76.9707326
+      }
+    },
+    {
+      "name": "Ganga Hospital",
+      "location": {
+        "latitude": 11.0259613,
+        "longitude": 76.9496428
+      }
+    },
+    {
+      "name": "G. Kuppuswamy Naidu Memorial Hospital",
+      "location": {
+        "latitude": 11.0121802,
+        "longitude": 76.9783065
+      }
+    },
+    {
+      "name": "Government Hospital Valparai",
+      "location": {
+        "latitude": 10.329986,
+        "longitude": 76.9553477
+      }
+    },
+    {
+      "name": "Government Hospital Annur",
+      "location": {
+        "latitude": 11.2311578,
+        "longitude": 77.0989781
+      }
+    },
+    {
+      "name": "Mettupalayam Government Hospital",
+      "location": {
+        "latitude": 11.3045148,
+        "longitude": 76.9339501
+      }
+    },
+    {
+      "name": "Government Hospital Kinathukadavu",
+      "location": {
+        "latitude": 10.8211156,
+        "longitude": 77.0125599
+      }
+    },
+    {
+      "name": "Government Hospital Kottur",
+      "location": {
+        "latitude": 10.5401958,
+        "longitude": 76.9798786
+      }
+    },
+    {
+      "name": "Government Hospital Madukkarai",
+      "location": {
+        "latitude": 10.9275123,
+        "longitude": 76.9478597
+      }
+    },
+    
+    {
+      "name": "Sri Lakshmi Medical Centre and Hospital",
+      "location": {
+        "latitude": 11.0790261,
+        "longitude": 76.9397718
+      }
+    },
+    {
+      "name": "PSG Hospitals",
+      "location": {
+        "latitude": 11.0185844,
+        "longitude": 77.0068
+      }
+    }
+  ]
